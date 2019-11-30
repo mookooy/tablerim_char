@@ -147,6 +147,7 @@ dom.generateBtn.addEventListener('click', function () {
     NATR: getValues('natr'),
     SOCL: getValues('socl'),
     CRFT: getValues('crft'),
+    LABR: getValues('labr'),
     COOK: getValues('cook')
   };
 
