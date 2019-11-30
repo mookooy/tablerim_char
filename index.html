@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tablerim Character Generator</title>
+  <style>
+      #minAndMax input {
+        width: 50px;
+        text-align: right;
+      }
+      .right {
+        text-align: right;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+<body>
+<h1>Boo-Ya I did it</h1>
+<button id="generateBtn">Generate character</button>
+<table id="minAndMax" class="hide">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RNGE:</td>
+      <td><input type="number" id="rngeMin" min="0" value="0" /></td>
+      <td><input type="number" id="rngeMax" min="0" value="3" /></td>
+    </tr>
+    <tr>
+      <td>MELE:</td>
+      <td><input type="number" id="meleMin" min="0" value="0" /></td>
+      <td><input type="number" id="meleMax" min="0" value="3" /></td>
+    </tr>
+      <tr>
+      <td>INTL:</td>
+      <td><input type="number" id="intlMin" min="0" value="0" /></td>
+      <td><input type="number" id="intlMax" min="0" value="3" /></td>
+    </tr>
+    <tr>
+      <td>NATR:</td>
+      <td><input type="number" id="natrMin" min="0" value="0" /></td>
+      <td><input type="number" id="natrMax" min="0" value="3" /></td>
+    </tr>
+      <tr>
+      <td>SOCL:</td>
+      <td><input type="number" id="soclMin" min="0" value="0" /></td>
+      <td><input type="number" id="soclMax" min="0" value="3" /></td>
+    </tr>
+    <tr>
+      <td>CRFT:</td>
+      <td><input type="number" id="crftMin" min="0" value="0" /></td>
+      <td><input type="number" id="crftMax" min="0" value="3" /></td>
+    </tr>
+      <tr>
+      <td>LABR:</td>
+      <td><input type="number" id="labrMin" min="0" value="0" /></td>
+      <td><input type="number" id="labrMax" min="0" value="3" /></td>
+    </tr>
+    <tr>
+      <td>COOK:</td>
+      <td><input type="number" id="cookMin" min="0" value="0" /></td>
+      <td><input type="number" id="cookMax" min="0" value="3" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="results" class="hide">
+  <thead>
+    <tr>
+      <th></th>
+      <th>RNGE</th>
+      <th>MELE</th>
+      <th>INTL</th>
+      <th>NATR</th>
+      <th>SOCL</th>
+      <th>CRFT</th>
+      <th>LABR</th>
+      <th>COOK</th>
+    </tr>
+  </thead>
+  <tbody class="right">
+    <tr id="passion">
+      <td>passion</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr id="stat">
+      <td>stat</td>
+      <td id="rngeStat"></td>
+      <td id="meleStat"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<pre id="character"></pre>
+<script src="index.js"></script>
+</body>
+</html>
